@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Syncopate, Montserrat } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const syncopate = Syncopate({
   weight: ["400", "700"],
@@ -27,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${syncopate.variable} ${montserrat.variable}`}>
       <body className="font-body bg-cloud text-navy antialiased">
-        {children}
+        <Navbar />
+        <main className="pt-20">{children}</main>
+        <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
