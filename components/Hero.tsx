@@ -22,12 +22,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-navy/75" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-6">
-        <h1 className="font-heading font-bold text-cloud text-4xl md:text-6xl lg:text-7xl uppercase tracking-widest leading-tight">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto flex flex-col items-center gap-4 sm:gap-6">
+        <h1 className="font-heading font-bold text-cloud text-2xl sm:text-4xl md:text-6xl lg:text-7xl uppercase tracking-wide sm:tracking-widest leading-tight">
           {siteConfig.heroTitle}
         </h1>
         <div className="w-20 h-px bg-venus mx-auto" />
-        <p className="font-body text-meteor text-base md:text-lg max-w-2xl leading-relaxed">
+        <p className="font-body text-meteor text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed">
           {siteConfig.heroSubtitle}
         </p>
         <a
