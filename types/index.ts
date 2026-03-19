@@ -24,6 +24,7 @@ export interface DoctorProfile {
 
 export interface ContactInfo {
   phone: string;
+  email: string;
   whatsapp: string;
   instagram: string;
   instagramUrl: string;

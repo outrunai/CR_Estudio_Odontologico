@@ -36,13 +36,14 @@ export const doctorProfile: DoctorProfile = {
 
 export const contactInfo: ContactInfo = {
   phone: "+57 301 3337563",
+  email: "estudioodontologico.cr@gmail.com",
   whatsapp: "+573013337563",
   instagram: "@cr_estudioodontologico",
   instagramUrl: "https://www.instagram.com/cr_estudioodontologico/",
   address: "Calle 7 # 39-197 Torre Intermédica Consultorio 1101",
   city: "Medellín, Antioquia",
   googleMapsUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1!2d-75.57!3d6.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCalle+7+%23+39-197+Torre+Interm%C3%A9dica!5e0!3m2!1ses!2sco!4v1",
+    "https://www.google.com/maps?q=Calle+7+%2339-197+Torre+Intermedica+Consultorio+1101+Medellin+Antioquia+Colombia&output=embed",
   googleMyBusinessUrl: "https://share.google/cCszCcr4OsBoKG0l7",
 };
 
