@@ -40,10 +40,10 @@ export const contactInfo: ContactInfo = {
   whatsapp: "+573013337563",
   instagram: "@cr_estudioodontologico",
   instagramUrl: "https://www.instagram.com/cr_estudioodontologico/",
-  address: "Calle 7 # 39-197 Torre Intermédica Consultorio 1101",
+  address: "Calle 7 # 39-197 Torre Intermédica Consultorio 1011",
   city: "Medellín, Antioquia",
   googleMapsUrl:
-    "https://www.google.com/maps?q=Calle+7+%2339-197+Torre+Intermedica+Consultorio+1101+Medellin+Antioquia+Colombia&output=embed",
+    "https://www.google.com/maps?q=Calle+7+%2339-197+Torre+Intermedica+Consultorio+1011+Medellin+Antioquia+Colombia&output=embed",
   googleMyBusinessUrl: "https://share.google/cCszCcr4OsBoKG0l7",
 };
 
@@ -66,19 +66,19 @@ export const services: Service[] = [
     id: "protesis-hibrida",
     name: "Prótesis Híbrida",
     description:
-      "Solución de rehabilitación completa sin necesidad de implantes",
+      "Solución fija para reemplazar los dientes en pacientes que han perdido todas sus piezas",
     icon: "denture",
   },
   {
     id: "diseno-resina",
-    name: "Diseño en Resina (10 dientes)",
+    name: "Diseño en Resina",
     description:
       "Transformación estética de la sonrisa completa usando resina de alta calidad",
     icon: "smile",
   },
   {
     id: "microdiseno",
-    name: "Microdiseño (10 dientes)",
+    name: "Microdiseño",
     description:
       "Ajustes de alta precisión para lograr armonía y estética en la sonrisa",
     icon: "precision",
@@ -89,6 +89,27 @@ export const services: Service[] = [
     description:
       "Profilaxis profesional para mantener la salud periodontal y el brillo natural",
     icon: "clean",
+  },
+  {
+    id: "ortodoncia-invisible",
+    name: "Ortodoncia Invisible",
+    description:
+      "Alineadores transparentes y removibles que corrigen la posición de los dientes de forma discreta",
+    icon: "aligner",
+  },
+  {
+    id: "diseno-ceramica",
+    name: "Diseño en Cerámica",
+    description:
+      "Carillas y restauraciones en cerámica de alta estética para una sonrisa natural y duradera",
+    icon: "ceramic",
+  },
+  {
+    id: "extraccion-cordales",
+    name: "Extracción de Cordales",
+    description:
+      "Procedimiento seguro para la extracción de muelas del juicio con técnicas mínimamente invasivas",
+    icon: "extraction",
   },
 ];
 
