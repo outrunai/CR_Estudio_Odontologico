@@ -10,8 +10,8 @@ import {
   Eye,
   Diamond,
   Syringe,
-  type Icon,
 } from "@phosphor-icons/react/dist/ssr";
+import type { Icon } from "@phosphor-icons/react";
 
 const iconMap: Record<string, Icon> = {
   crown: Crown,
