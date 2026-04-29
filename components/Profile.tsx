@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { doctorProfile } from "@/lib/data";
+import { getDoctorProfile } from "@/lib/sanity-queries";
 
-export default function Profile() {
+export default async function Profile() {
+  const doctorProfile = await getDoctorProfile();
+
   return (
     <section id="perfil" className="bg-meteor">
       <div className="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

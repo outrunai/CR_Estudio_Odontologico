@@ -1,4 +1,4 @@
-import { services, siteConfig } from "@/lib/data";
+import { getServices, getSiteConfig } from "@/lib/sanity-queries";
 import type { Service } from "@/types";
 import {
   Crown,
@@ -31,7 +31,9 @@ function ServiceIcon({ icon }: { icon: string }) {
   return <PhosphorIcon size={36} weight="duotone" />;
 }
 
-export default function Services() {
+export default async function Services() {
+  const [siteConfig, services] = await Promise.all([getSiteConfig(), getServices()]);
+
   return (
     <section id="servicios" className="bg-cloud">
       <div className="max-w-6xl mx-auto px-6 py-20">

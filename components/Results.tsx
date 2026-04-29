@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { caseStudies, siteConfig } from "@/lib/data";
+import { getCaseStudies, getSiteConfig } from "@/lib/sanity-queries";
 import type { CaseStudy } from "@/types";
 
-export default function Results() {
+export default async function Results() {
+  const [siteConfig, caseStudies] = await Promise.all([getSiteConfig(), getCaseStudies()]);
+
   return (
     <section id="resultados" className="bg-meteor">
       <div className="max-w-6xl mx-auto px-6 py-20">

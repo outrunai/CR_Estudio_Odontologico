@@ -1,7 +1,10 @@
 import Image from "next/image";
-import { siteConfig } from "@/lib/data";
+import { getSiteConfig } from "@/lib/sanity-queries";
 
-export default function Hero() {
+export default async function Hero() {
+  const siteConfig = await getSiteConfig();
+  const bgImage = siteConfig.heroBackgroundImageUrl ?? "/images/IMG_2466.JPG";
+
   return (
     <section
       id="inicio"
@@ -10,7 +13,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/IMG_2466.JPG"
+          src={bgImage}
           alt="CR Estudio Odontológico - fondo"
           fill
           className="object-cover object-center"

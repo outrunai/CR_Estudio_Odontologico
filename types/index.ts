@@ -39,6 +39,7 @@ export interface SiteConfig {
   heroTitle: string;
   heroSubtitle: string;
   heroCta: string;
+  heroBackgroundImageUrl?: string;
   aboutTitle: string;
   servicesTitle: string;
   resultsTitle: string;

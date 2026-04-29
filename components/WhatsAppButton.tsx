@@ -1,6 +1,7 @@
-import { contactInfo } from "@/lib/data";
+import { getContactInfo } from "@/lib/sanity-queries";
 
-export default function WhatsAppButton() {
+export default async function WhatsAppButton() {
+  const contactInfo = await getContactInfo();
   const whatsappUrl = `https://wa.me/${contactInfo.whatsapp.replace("+", "")}`;
 
   return (

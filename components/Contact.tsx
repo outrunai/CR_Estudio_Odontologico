@@ -1,6 +1,8 @@
-import { contactInfo, siteConfig } from "@/lib/data";
+import { getContactInfo, getSiteConfig } from "@/lib/sanity-queries";
 
-export default function Contact() {
+export default async function Contact() {
+  const [siteConfig, contactInfo] = await Promise.all([getSiteConfig(), getContactInfo()]);
+
   return (
     <section id="contacto" className="bg-cloud">
       <div className="max-w-6xl mx-auto px-6 py-20">

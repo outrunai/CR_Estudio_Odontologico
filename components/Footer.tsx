@@ -1,6 +1,8 @@
-import { contactInfo, siteConfig } from "@/lib/data";
+import { getContactInfo, getSiteConfig } from "@/lib/sanity-queries";
 
-export default function Footer() {
+export default async function Footer() {
+  const [siteConfig, contactInfo] = await Promise.all([getSiteConfig(), getContactInfo()]);
+
   return (
     <footer className="bg-navy text-cloud font-body py-10 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
