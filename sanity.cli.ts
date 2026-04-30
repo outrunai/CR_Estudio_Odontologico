@@ -6,7 +6,7 @@ export default defineCliConfig({
     projectId: "tus5kiby",
     dataset: "production",
   },
-  studioHost: "crestudio",
+  studioHost: "cr-estudio-odontologico",
   vite(config: UserConfig): UserConfig {
     return {
       ...config,
