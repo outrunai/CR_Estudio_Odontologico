@@ -5,6 +5,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    webpackBuildWorker: false,
+    cpus: 1,
+  },
+  webpack: (config, { isServer }) => {
+    config.parallelism = 1;
+    return config;
+  },
 };
 
 export default nextConfig;

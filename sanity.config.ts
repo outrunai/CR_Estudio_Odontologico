@@ -16,33 +16,12 @@ export default defineConfig({
         S.list()
           .title("Contenido")
           .items([
-            S.listItem()
-              .title("Configuración del Sitio")
-              .id("siteConfig")
-              .child(
-                S.document()
-                  .schemaType("siteConfig")
-                  .documentId("siteConfig")
-              ),
-            S.listItem()
-              .title("Perfil del Doctor")
-              .id("doctorProfile")
-              .child(
-                S.document()
-                  .schemaType("doctorProfile")
-                  .documentId("doctorProfile")
-              ),
-            S.listItem()
-              .title("Información de Contacto")
-              .id("contactInfo")
-              .child(
-                S.document()
-                  .schemaType("contactInfo")
-                  .documentId("contactInfo")
-              ),
+            S.documentTypeListItem("siteConfig").title("⚙️ Configuración del Sitio"),
+            S.documentTypeListItem("doctorProfile").title("👩‍⚕️ Perfil de la Doctora"),
+            S.documentTypeListItem("contactInfo").title("📞 Información de Contacto"),
             S.divider(),
-            S.documentTypeListItem("service").title("Servicios"),
-            S.documentTypeListItem("caseStudy").title("Casos / Galería"),
+            S.documentTypeListItem("service").title("🦷 Servicios"),
+            S.documentTypeListItem("caseStudy").title("📸 Casos / Galería"),
           ]),
     }),
     visionTool(),
